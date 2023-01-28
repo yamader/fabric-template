@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "hoge",
+  "version": "${version}",
+  "name": "Hoge mod",
+  "description": "hogehoge",
+  "authors": [
+    "YamaD"
+  ],
+  "contact": {
+    "homepage": "https://yamad.me",
+    "sources": "https://github.com/yamader/hoge"
+  },
+  "license": "MIT",
+  "icon": "assets/mod_name/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "net.dyama.hoge.Hoge"
+      }
+    ]
+  },
+  "mixins": [
+    "hoge.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader}",
+    "fabric-api": ">=${fabric_api}",
+    "fabric-language-kotlin": ">=${fabric_kotlin}",
+    "minecraft": ">=${minecraft}",
+    "java": ">=${java}"
+  }
+}
